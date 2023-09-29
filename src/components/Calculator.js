@@ -31,7 +31,6 @@ function Calculator() {
         if (n === '\u00F7' || n === '\u00D7' || n === '-' || n === '+' || n === '=') {
           return <InputButton inputSymbol={n} key={n} background="red" />;
         }
-        else
         return <InputButton inputSymbol={n} key={n} background="gray" />;
       })}
     </div>
