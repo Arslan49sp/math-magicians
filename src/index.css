@@ -25,3 +25,42 @@ code {
     'Courier New',
     monospace;
 }
+
+.calc-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.resultS-sreen {
+  grid-column: span 4;
+  width: inherit;
+  text-align: right;
+  background-color: beige;
+  padding: 10px 20px;
+}
+
+.input-container {
+  padding: 8px 15px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.input-container:is(:hover, :focus) {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.red {
+  background-color: orange;
+}
+
+.gray {
+  background-color: antiquewhite;
+}
