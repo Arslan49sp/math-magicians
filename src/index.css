@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +27,43 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.calc-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 400px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.result-screen {
+  grid-column: span 4;
+  width: inherit;
+  text-align: right;
+  background-color: #858694;
+  padding: 10px 20px;
+}
+
+.input-container {
+  padding: 8px 15px;
+  border: 1px solid rgb(50, 240, 240);
+  text-align: center;
+}
+
+.input-container:is(:hover, :focus) {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.red {
+  background-color: #f5913e;
+}
+
+.gray {
+  background-color: #e0e0e0;
 }
