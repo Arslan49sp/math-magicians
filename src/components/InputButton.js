@@ -20,8 +20,8 @@ function InputButton({ inputSymbol, background, handleClickButton }) {
 }
 
 InputButton.propTypes = {
-  inputSymbol: PropTypes.isRequired,
-  background: PropTypes.isRequired,
+  inputSymbol: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  background: PropTypes.string.isRequired,
   handleClickButton: PropTypes.func.isRequired,
 };
 

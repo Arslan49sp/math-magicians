@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -29,8 +32,8 @@ code {
 .calc-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 400px;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -38,13 +41,13 @@ code {
   grid-column: span 4;
   width: inherit;
   text-align: right;
-  background-color: beige;
+  background-color: #858694;
   padding: 10px 20px;
 }
 
 .input-container {
   padding: 8px 15px;
-  border: 1px solid white;
+  border: 1px solid rgb(50, 240, 240);
   text-align: center;
 }
 
@@ -58,9 +61,9 @@ code {
 }
 
 .red {
-  background-color: orange;
+  background-color: #f5913e;
 }
 
 .gray {
-  background-color: antiquewhite;
+  background-color: #e0e0e0;
 }
