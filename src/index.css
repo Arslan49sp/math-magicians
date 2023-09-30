@@ -67,3 +67,13 @@ code {
 .gray {
   background-color: #e0e0e0;
 }
+
+/* quotes styling */
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  max-width: 40ch;
+}
