@@ -17,8 +17,8 @@ function InputButton({ inputSymbol, background }) {
 }
 
 InputButton.propTypes = {
-  inputSymbol: PropTypes.isRequired,
-  background: PropTypes.isRequired,
+  inputSymbol: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  background: PropTypes.string.isRequired,
 };
 
 export default InputButton;

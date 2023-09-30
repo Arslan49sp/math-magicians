@@ -3,7 +3,7 @@ import InputButton from './InputButton';
 
 const number = [
   'AC',
-  '9',
+  '+/-',
   '%',
   '\u00F7',
   7,
